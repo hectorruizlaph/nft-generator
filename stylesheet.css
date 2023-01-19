@@ -1,0 +1,112 @@
+body {
+  color: #0b99d9;
+  background: #0b99d9;
+  font-size: "20px";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.form-title {
+  color: #0b99d9;
+}
+
+#video {
+  width: auto;
+  height: 100%;
+  opacity: 3%;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+#card {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 15%;
+}
+
+.column.outer2 {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  padding: 50px;
+  align-content: center;
+  text-align: center;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+/* Clear floats after the columns */
+.row {
+  padding: 50px 0 50px 0;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#left {
+  text-align: left;
+}
+
+.pps {
+  font-size: large;
+  text-align: left;
+  font-weight: 600;
+  padding: 5px;
+  padding-top: 5%;
+  border-radius: 5px;
+  color: #f3f4f8;
+  padding: 10px;
+  margin-top: 10px;
+  right: 0;
+  border: 1px solid #86c2de;
+  display: flex;
+  flex-direction: row;
+}
+
+.pps::placeholder {
+  color: red;
+}
+
+#hide {
+  display: none;
+}
+
+.image-items {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 100%;
+  }
+
+  #video {
+    position: fixed;
+    width: auto;
+    height: 100vh !important;
+  }
+  
+}
